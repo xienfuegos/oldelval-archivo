@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oldelval · Archivo Audiovisual</title>
+  <title>Oldelval Â· Archivo Audiovisual</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -36,7 +36,7 @@
       overflow-x: hidden;
     }
 
-    /* ── PASSWORD GATE ── */
+    /* ââ PASSWORD GATE ââ */
     #gate {
       position: fixed; inset: 0; z-index: 999;
       background: var(--bg);
@@ -81,10 +81,10 @@
       display: none;
     }
 
-    /* ── MAIN APP ── */
+    /* ââ MAIN APP ââ */
     #app { display: none; }
 
-    /* ── HEADER ── */
+    /* ââ HEADER ââ */
     header {
       position: sticky; top: 0; z-index: 100;
       background: rgba(8,11,18,0.92);
@@ -138,7 +138,7 @@
     }
     .hstat span { color: var(--text); font-weight: 600; }
 
-    /* ── FILTERS ── */
+    /* ââ FILTERS ââ */
     .filter-bar {
       background: var(--bg);
       border-bottom: 1px solid var(--border);
@@ -168,7 +168,7 @@
     }
     .chip-all.active { background: var(--border2); border-color: var(--border2); color: var(--text); }
 
-    /* ── MAIN GRID ── */
+    /* ââ MAIN GRID ââ */
     main {
       max-width: 1280px; margin: 0 auto;
       padding: 24px;
@@ -188,7 +188,7 @@
       border-radius: 8px; outline: none; cursor: pointer;
     }
 
-    /* ── CARDS GRID ── */
+    /* ââ CARDS GRID ââ */
     #grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -257,7 +257,7 @@
       background: var(--bg); padding: 2px 7px; border-radius: 5px;
     }
 
-    /* ── TYPE COLORS ── */
+    /* ââ TYPE COLORS ââ */
     .tp-foto   { background: rgba(59,130,246,0.15); color: #60a5fa; }
     .tp-raw    { background: rgba(168,85,247,0.15); color: #c084fc; }
     .tp-audio  { background: rgba(234,179,8,0.15);  color: #fbbf24; }
@@ -265,7 +265,7 @@
     .tp-entrega { background: rgba(249,115,22,0.15); color: #fb923c; }
     .tp-none   { background: rgba(100,116,139,0.15); color: #94a3b8; }
 
-    /* ── EMPTY STATE ── */
+    /* ââ EMPTY STATE ââ */
     #empty {
       display: none; text-align: center;
       padding: 80px 24px; color: var(--text2);
@@ -273,7 +273,7 @@
     #empty h3 { font-size: 18px; color: var(--text); margin-bottom: 8px; }
     #empty p { font-size: 14px; }
 
-    /* ── LOADING ── */
+    /* ââ LOADING ââ */
     #loading {
       text-align: center; padding: 80px;
       color: var(--text2); font-size: 14px;
@@ -288,7 +288,7 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── YEAR ACCENT COLORS ── */
+    /* ââ YEAR ACCENT COLORS ââ */
     .yr-2020 { border-left: 3px solid #64748b; }
     .yr-2021 { border-left: 3px solid #475569; }
     .yr-2022 { border-left: 3px solid #6366f1; }
@@ -307,19 +307,19 @@
 </head>
 <body>
 
-<!-- ── PASSWORD GATE ── -->
+<!-- ââ PASSWORD GATE ââ -->
 <div id="gate">
   <div id="gate-card">
     <div id="gate-logo">Tronadores</div>
     <h1 id="gate-title">Archivo Oldelval</h1>
-    <p id="gate-sub">Ingresá la contraseña para acceder al material</p>
-    <input id="gate-input" type="password" placeholder="Contraseña" autocomplete="current-password" />
+    <p id="gate-sub">IngresÃ¡ la contraseÃ±a para acceder al material</p>
+    <input id="gate-input" type="password" placeholder="ContraseÃ±a" autocomplete="current-password" />
     <button id="gate-btn">Ingresar</button>
-    <p id="gate-error">Contraseña incorrecta</p>
+    <p id="gate-error">ContraseÃ±a incorrecta</p>
   </div>
 </div>
 
-<!-- ── MAIN APP ── -->
+<!-- ââ MAIN APP ââ -->
 <div id="app">
 
   <header>
@@ -334,18 +334,18 @@
         <svg class="search-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
-        <input id="search" type="text" placeholder="Buscar por trabajo, carpeta, fecha…" autocomplete="off" />
+        <input id="search" type="text" placeholder="Buscar por trabajo, carpeta, fechaâ¦" autocomplete="off" />
       </div>
       <div class="header-stats">
-        <span class="hstat">Carpetas: <span id="stat-total">—</span></span>
-        <span class="hstat">Trabajos: <span id="stat-jobs">—</span></span>
+        <span class="hstat">Carpetas: <span id="stat-total">â</span></span>
+        <span class="hstat">Trabajos: <span id="stat-jobs">â</span></span>
       </div>
     </div>
   </header>
 
   <div class="filter-bar">
     <div class="filter-inner">
-      <span class="filter-label">Año</span>
+      <span class="filter-label">AÃ±o</span>
       <div class="chips" id="chips-yr"></div>
       <div class="filter-sep"></div>
       <span class="filter-label">Tipo</span>
@@ -360,16 +360,16 @@
     <div class="results-header">
       <span class="results-count" id="results-count"></span>
       <select class="sort-select" id="sort-sel">
-        <option value="date-desc">Más reciente primero</option>
-        <option value="date-asc">Más antiguo primero</option>
-        <option value="name-asc">Nombre A→Z</option>
-        <option value="job-asc">Trabajo A→Z</option>
+        <option value="date-desc">MÃ¡s reciente primero</option>
+        <option value="date-asc">MÃ¡s antiguo primero</option>
+        <option value="name-asc">Nombre AâZ</option>
+        <option value="job-asc">Trabajo AâZ</option>
       </select>
     </div>
 
     <div id="loading">
       <div class="spinner"></div>
-      Cargando archivo…
+      Cargando archivoâ¦
     </div>
     <div id="grid"></div>
     <div id="empty">
@@ -377,18 +377,18 @@
         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
       </svg>
       <h3>Sin resultados</h3>
-      <p>Probá con otros filtros o términos de búsqueda</p>
+      <p>ProbÃ¡ con otros filtros o tÃ©rminos de bÃºsqueda</p>
     </div>
   </main>
 
 </div>
 
 <script>
-// ── CONFIG ──
-const PASSWORD = 'oldelval';
+// ââ CONFIG ââ
+const PASSWORD = 'JuliCapitana';
 const DATA_URL = 'data.json';
 
-// ── GATE ──
+// ââ GATE ââ
 const gateEl   = document.getElementById('gate');
 const appEl    = document.getElementById('app');
 const gateInput = document.getElementById('gate-input');
@@ -416,7 +416,7 @@ if (sessionStorage.getItem('oldelval_auth') === '1') {
   initApp();
 }
 
-// ── APP ──
+// ââ APP ââ
 let RAW = [], filtered = [];
 let activeYr = 'all', activeTp = 'all', activeJo = 'all';
 let sortVal = 'date-desc';
@@ -446,9 +446,9 @@ function buildFilters() {
   // Types
   const types = [...new Set(RAW.map(r => r.tp).filter(Boolean))].sort();
   buildChips('chips-tp', ['all', ...types], v => { activeTp = v; apply(); },
-    { 'Foto':'📷', 'RAW':'🗂', 'Audio':'🎧', 'Edición':'✂️', 'Entrega':'📦' });
+    { 'Foto':'ð·', 'RAW':'ð', 'Audio':'ð§', 'EdiciÃ³n':'âï¸', 'Entrega':'ð¦' });
 
-  // Jobs — clean names
+  // Jobs â clean names
   const jobList = [...new Set(RAW.map(r => r.jo).filter(Boolean))].sort();
   buildChips('chips-jo', ['all', ...jobList], v => { activeJo = v; apply(); });
 }
@@ -498,7 +498,7 @@ function apply() {
 }
 
 function tpClass(tp) {
-  const m = { 'Foto':'tp-foto','RAW':'tp-raw','Audio':'tp-audio','Edición':'tp-edicion','Entrega':'tp-entrega' };
+  const m = { 'Foto':'tp-foto','RAW':'tp-raw','Audio':'tp-audio','EdiciÃ³n':'tp-edicion','Entrega':'tp-entrega' };
   return m[tp] || 'tp-none';
 }
 
@@ -529,7 +529,7 @@ function render() {
   empty.style.display = 'none';
 
   grid.innerHTML = filtered.map(r => {
-    const name    = r.nm || '—';
+    const name    = r.nm || 'â';
     const job     = r.jo || '';
     const date    = fmtDate(r.dt);
     const yr      = r.yr || '';
@@ -549,7 +549,7 @@ function render() {
           ${tp ? `<span class="type-badge ${tpCls}">${tp}</span>` : ''}
         </div>
         <div class="card-name">${name}</div>
-        ${date ? `<div class="card-date">📅 ${date}</div>` : ''}
+        ${date ? `<div class="card-date">ð ${date}</div>` : ''}
       </div>
       <div class="card-path">${path}</div>
       <div class="card-bottom">
